@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Button Library</title>
+<link rel="stylesheet" href="button.css" />
+<style>
+.btn 
+{
+border: 10px;
+padding-left: 20px;
+padding-right: 20px;
+border-radius: 5px;
+cursor: pointer;
+color: #fff;
+transition: all 0.10s;
+}
+.danger-btn 
+{
+    background-color: rgb(252, 4, 99);
+}
+.danger-btn:hover 
+{
+    box-shadow: 0 8px 25px -8px rgb(245, 5, 165);
+}
+.success-btn 
+{
+    background-color: rgb(2, 189, 158);
+}
+.success-btn:hover 
+{
+    box-shadow: 0px 8px 25px -8px rgb(2, 189, 158);
+}
+.primary-btn 
+{
+    background-color: rgb(4, 8, 250);
+}
+.primary-btn:hover 
+{
+    box-shadow: 0px 8px 25px -8px rgb(4, 8, 250);
+}
+.warning-btn 
+{
+    background-color: rgb(255, 60, 1);
+}
+.warning-btn:hover 
+{
+    box-shadow: 0px 8px 25px -8px rgb(255, 60, 1);
+}
+:root 
+{
+    --btn-padding: 10px;
+    --btn-border-radius: 5px;
+    --btn-transition: all 0.10s;
+    --btn-shadow-hover: 0 8px 25px -8px;
+
+    --danger-color: rgb(245, 5, 213);
+    --success-color: rgb(2, 189, 158);
+    --primary-color: rgb(4, 8, 250);
+    --warning-color: rgb(255, 60, 1);
+    --dark-color: rgb(30, 30, 30);
+}
+.btn 
+{
+    border: 10px;
+    padding: var(--btn-padding);
+    border-radius: var(--btn-border-radius);
+    cursor: pointer;
+    color: #f8faf7;
+    transition: var(--btn-transition);
+}
+.danger-btn 
+{
+background-color: var(--danger-color);
+}
+.danger-btn:hover 
+{
+box-shadow: var(--btn-shadow-hover) var(--danger-color);
+}
+.success-btn 
+{
+    background-color: var(--success-color);
+}
+.success-btn:hover 
+{
+    box-shadow: var(--btn-shadow-hover) var(--success-color);
+}
+.primary-btn 
+{
+background-color: var(--primary-color);
+}
+.primary-btn:hover 
+{
+box-shadow: var(--btn-shadow-hover) var(--primary-color);
+}
+.warning-btn 
+{
+background-color: var(--warning-color);
+}
+.warning-btn:hover 
+{
+box-shadow: var(--btn-shadow-hover) var(--warning-color);
+}
+.dark-btn 
+{
+background-color: var(--dark-color);
+}
+.dark-btn:hover 
+{
+box-shadow: var(--btn-shadow-hover) var(--dark-color);
+}
+</style>
+</head>
+<body>
+<button>Button</button>
+<button class="btn primary-btn">Button</button>
+<button class="btn danger-btn">Button</button>
+<button class="btn success-btn">Button</button>
+<button class="btn warning-btn">Button</button>
+<button class="btn dark-btn">Button</button>
+</body>
+</html>
